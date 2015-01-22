@@ -14,6 +14,10 @@ body {
     font-size: 13px;
 }
 
+.author {
+    text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -109,6 +113,7 @@ a.pure-button-primary {
     color: white;
     font-weight: 400;
     font-size: 120%;
+    text-transform: lowercase;
 }
 
 .home-menu .pure-menu-selected a {
@@ -130,9 +135,13 @@ a.pure-button-primary {
  * -- SPLASH STYLES --
  * This is the blue top section that appears on the page.
  */
+ #geninfo{
 
-.splash-container {
-    background: #1f8dd6;
+ }
+
+.splash-Container {
+    /*background: #3A9AD9;*/
+    background-image: url('/familyimage.jpg');
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -142,28 +151,31 @@ a.pure-button-primary {
     left: 0;
     position: fixed !important;
 }
-
+#splash{
+    font-size: 6em;
+    margin-left: 40%;
+}
+#splashsignup{
+    text-align: center;
+}
 .splash {
     /* absolute center .splash within .splash-container */
     width: 80%;
     height: 60%;
     margin: auto;
     position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+    top: -25%; left: -10%; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Indie Flower', cursive;
-
+}
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 20px;
+    font-size: 2em;
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
-    color: white;
-    border: 3px solid white;
-    padding: 1em 1.6em;
+    color: black;
     font-weight: 100;
-    border-radius: 5px;
     line-height: 1em;
 }
 
@@ -179,6 +191,9 @@ a.pure-button-primary {
  * -- CONTENT STYLES --
  * This represents the content area (everything below the blue section)
  */
+ #signup{
+    background-color: #E9E0D6;
+ }
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
@@ -263,7 +278,6 @@ a.pure-button-primary {
         font-size: 250%;
     }
 
-
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
         border: none;
@@ -282,3 +296,4 @@ a.pure-button-primary {
         font-size: 300%;
     }
 }
+
